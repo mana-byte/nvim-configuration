@@ -3,11 +3,18 @@ return {
     'ryanoasis/vim-devicons',
     'nvim-tree/nvim-web-devicons',
     'lewis6991/gitsigns.nvim',
-
     {
         'romgrk/barbar.nvim',
+        dependencies = {
+            'lewis6991/gitsigns.nvim',
+            'nvim-tree/nvim-web-devicons',
+        },
         config = function()
-            require('barbar').setup()    -- using defaults
+            require('barbar').setup({
+                tabpages = true,
+                highlight_alternate = true,
+                no_name_title = "X",
+            })
             vim.keymap.set('n', '<F1>', '<Cmd>BufferGoto 1<CR>')
             vim.keymap.set('n', '<F2>', '<Cmd>BufferGoto 2<CR>')
             vim.keymap.set('n', '<F3>', '<Cmd>BufferGoto 3<CR>')
