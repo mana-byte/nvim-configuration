@@ -7,28 +7,32 @@ return {
     },
     config = function()
         local noice = require("noice")
-        -- FIX:
-        -- `vim.lsp.handlers["textDocument/hover"]` has been overwritten by another plugin?
-        -- Either disable the other plugin or set `config.lsp.hover.enabled = false` in your **Noice** config.
-        --   - plugin: unknown
-        --   - file: D:\Program file\dev\nvim\share\nvim\runtime/lua/vim/lsp.lua
-        --   - line: 2318
-
         noice.setup({
             lsp = {
                 override = {
-                    ["vim.lsp.util.convert_input_to_markdown_lines"] = false,
-                    ["vim.lsp.util.stylize_markdown"] = false,
-                    ["cmp.entry.get_documentation"] = false,
+                    ["vim.lsp.util.convert_input_to_markdown_lines"] = true,
+                    ["vim.lsp.util.stylize_markdown"] = true,
+                    ["cmp.entry.get_documentation"] = true,
                 },
                 hover = {
-                    enable = false,
+                    enabled = false,
+                    silent = true,
+                    view = nil,
                 },
+                signature_help = {
+                    enabled = false,
+                    view = nil,
+                },
+            },
+            presets = {
+                bottom_search = true,         -- use a classic bottom cmdline for search
+                command_palette = true,       -- position the cmdline and popupmenu together
+                long_message_to_split = true, -- long messages will be sent to a split
+                inc_rename = false,           -- enables an input dialog for inc-rename.nvim
+                lsp_doc_border = false,       -- add a border to hover docs and signature help
             },
         })
         vim.keymap.set("n", "<leader>nd", "<cmd>NoiceDismiss<cr>")
+        -- vim.lsp.handlers["textDocument/hover"] = vim.lsp.with(require("noice.lsp.hover").on_hover, { border = "rounded" })
     end,
-    presets = {
-        long_message_to_split = true, -- long messages will be sent to a split
-    },
 }
