@@ -12,7 +12,7 @@ vim.opt.foldmethod = 'indent'
 vim.opt.foldlevel = 99
 vim.opt.relativenumber = true
 
-require('mana.lazy')
+require("lazyMana.lazy")
 
 vim.cmd('colorscheme catppuccin')
 

@@ -11,4 +11,11 @@ if not vim.loop.fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
-require("lazy").setup("mana.plugins")
+require("lazy").setup({
+    spec = {
+        {import = "lazyMana.plugins.autocompletions"},
+        {import = "lazyMana.plugins.esthetics"},
+        {import = "lazyMana.plugins.navigations"}, 
+        {import = "lazyMana.plugins.utils"},
+    }
+})
