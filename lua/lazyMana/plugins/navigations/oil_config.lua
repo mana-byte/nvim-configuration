@@ -1,6 +1,9 @@
 return {
     {
         'stevearc/oil.nvim',
+        dependencies = {
+            'nvim-tree/nvim-web-devicons',
+        },
         config = function()
             local oil = require('oil')
             oil.setup({
@@ -23,8 +26,7 @@ return {
                     ["<C-p>"] = "actions.preview",
                 },
             })
-
-            vim.keymap.set("n", "-", "<cmd>Oil<CR>")
+            vim.keymap.set("n", "-", oil.open)
             vim.keymap.set("n", "è", oil.toggle_float)
         end
     },

@@ -14,10 +14,5 @@ vim.opt.relativenumber = true
 
 require("lazyMana.lazy")
 
-vim.cmd('colorscheme catppuccin')
-
-vim.g.UltiSnipsExpandTrigger = '<tab>'
-vim.g.UltiSnipsJumpForwardTrigger = '<c-b>'
-vim.g.UltiSnipsJumpBackwardTrigger = '<c-z>'
 vim.keymap.set('n', '<c-l>', ':vsplit<CR>', { silent = true })
 vim.keymap.set('n', '<leader>lp', '<cmd> vsplit <bar> split <bar> NvimTreeFocus <cr>')
