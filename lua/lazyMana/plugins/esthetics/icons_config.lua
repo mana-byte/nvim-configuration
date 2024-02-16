@@ -1,5 +1,4 @@
 return {
-
     'ryanoasis/vim-devicons',
     'nvim-tree/nvim-web-devicons',
     'lewis6991/gitsigns.nvim',
@@ -14,6 +13,9 @@ return {
                 tabpages = true,
                 highlight_alternate = true,
                 no_name_title = "X",
+                icons = {
+                    separator_at_end = false,
+                }
             })
             vim.keymap.set('n', '<F1>', '<Cmd>BufferGoto 1<CR>')
             vim.keymap.set('n', '<F2>', '<Cmd>BufferGoto 2<CR>')
