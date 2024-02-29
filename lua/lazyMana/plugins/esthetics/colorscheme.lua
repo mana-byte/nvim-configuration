@@ -1,10 +1,9 @@
 local function name()
     return "Mana"
 end
-
 return {
-    'rebelot/kanagawa.nvim',
-    'folke/tokyonight.nvim',
+    -- 'rebelot/kanagawa.nvim',
+    -- 'folke/tokyonight.nvim',
     {
         'catppuccin/nvim',
         lazy = false,
@@ -59,10 +58,10 @@ return {
                     section_separators = { left = '', right = '' },
                 },
                 sections = {
-                    lualine_a = { 'branch' },
-                    lualine_b = { 'diff', 'windows', 'diagnostics' },
-                    lualine_c = { 'filesize', 'encoding' },
-                    lualine_x = {  },
+                    lualine_a = { 'buffers' },
+                    lualine_b = { 'diagnostics', 'branch' , 'diff'},
+                    lualine_c = { 'filesize' },
+                    lualine_x = {},
                     lualine_y = { 'progress', 'os.date("%a at %X")', },
                     lualine_z = { name, 'mode' }
                 },

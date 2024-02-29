@@ -3,7 +3,7 @@ return {
     config = function()
         local treesitter = require'nvim-treesitter.configs'
         treesitter.setup {
-            ensure_installed = {"java", "c", "lua", "vim", "vimdoc", "query", "json", "python", "comment", "sql" },
+            ensure_installed = {"java", "c", "lua", "vim", "vimdoc", "json", "python", "comment", "sql", "markdown" },
             sync_install = false,
             ignore_install={},
             modules= {},
@@ -14,5 +14,4 @@ return {
             },
         }
     end
-
 }

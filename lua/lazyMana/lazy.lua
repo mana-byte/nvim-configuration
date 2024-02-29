@@ -15,7 +15,7 @@ require("lazy").setup({
     spec = {
         {import = "lazyMana.plugins.autocompletions"},
         {import = "lazyMana.plugins.esthetics"},
-        {import = "lazyMana.plugins.navigations"}, 
+        {import = "lazyMana.plugins.navigations"},
         {import = "lazyMana.plugins.utils"},
     }
 })
