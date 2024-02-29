@@ -2,35 +2,6 @@ local function name()
     return "Mana"
 end
 
-local night_emotes = {
-    "🌙", "🌚", "🌑", "🌒", "🌓", "🌔", "🌕", "🌖", "🌗", "🌘", "🌜", "🌛", "🌝", "🌚", "🌑", "🌒", "🌓", "🌔", "🌕", "🌖", "🌗", "🌘", "🌜",
-    "🌛", "🌝", "⭐", "🌟", "💫", "✨", "🌠", "🎇", "🎆", "🌌", "🌃", "🌉", "🌆", "🚀", "🛸"
-}
-local highnoon_emotes = {
-    "🌞", "🌝", "🌈", "🌄", "🌅", "🌼", "🌻", "🌺", "🌸", "🏵️", "💐", "🌷", "🌹", "🥀", "🌾", "🌿", "🍀", "🍁", "🍂", "🍃", "🌲", "🌳", "🌴",
-    "🍔",
-    "🍟", "🍕", "🍝", "🍜", "🍲", "🍛", "🍣", "🍤", "🍙", "🍚", "🍘", "🍥", "🍢", "🍡", "🍧", "🍨", "🍦", "🍰", "🎂", "🍮", "🍭", "🍬", "🍫",
-    "🍩", "🍪",
-}
-local day_emotes = {
-    "🌞", "🌝", "🌈", "🌄", "🌅", "🌼", "🌻", "🌺", "🌸", "🏵️", "💐", "🌷", "🌹", "🥀", "🌾", "🌿", "🍀", "🍁", "🍂", "🍃", "🌲", "🌳", "🌴",
-    "🌵", "🌱", "🌿", "☘️", "🍀", "🎍", "🎋", "🍃", "🍂", "🍁", "🍄", "🌾", "🌺", "🌻", "🌼", "🌷", "🌹", "🥀", "🌸", "💐", "🏵️"
-}
-local function time_to_sleep()
-    if tonumber(os.date("%H")) >= 23 or tonumber(os.date("%H")) <= 5 then
-        return "🚫🚫🚫🚫🚫🚫 GO TO SLEEP 🚫🚫🚫🚫🚫🚫               "
-    else
-        if tonumber(os.date("%H")) >= 20 or tonumber(os.date("%H")) <= 5 then
-            return night_emotes[math.random(1, #night_emotes)] .. " Day is over, don't forget to sleep!"
-        else
-            if tonumber(os.date("%H")) >= 14 and tonumber(os.date("%H")) <= 11 then
-                return highnoon_emotes[math.random(1, #highnoon_emotes)] .. " It is a good day! don't forget to eat !"
-            end
-            return day_emotes[math.random(1, #day_emotes)] .. " Today is a great day, so Have a nice day!"
-        end
-    end
-end
-
 return {
     'rebelot/kanagawa.nvim',
     'folke/tokyonight.nvim',
@@ -91,7 +62,7 @@ return {
                     lualine_a = { 'branch' },
                     lualine_b = { 'diff', 'windows', 'diagnostics' },
                     lualine_c = { 'filesize', 'encoding' },
-                    lualine_x = { time_to_sleep },
+                    lualine_x = {  },
                     lualine_y = { 'progress', 'os.date("%a at %X")', },
                     lualine_z = { name, 'mode' }
                 },
