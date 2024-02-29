@@ -1,12 +1,7 @@
 return {
-    'honza/vim-snippets',
     {
-        'SirVer/ultisnips',
-        config = function()
-            vim.g.UltiSnipsExpandTrigger = '<tab>'
-            vim.g.UltiSnipsJumpForwardTrigger = '<c-b>'
-            vim.g.UltiSnipsJumpBackwardTrigger = '<c-z>'
-        end
+        "L3MON4D3/LuaSnip",
+        version = "v2.*",
+        build = "make install_jsregexp"
     },
-    'VundleVim/Vundle.vim',
 }
