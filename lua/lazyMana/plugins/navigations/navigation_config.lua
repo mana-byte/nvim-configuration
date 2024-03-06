@@ -15,6 +15,11 @@ return {
             local telescope = require('telescope')
             telescope.setup {
                 defaults = {
+                    mappings = {
+                        i = {
+                            ["<C-h>"] = "which_key"
+                        }
+                    },
                     path_display = {
                         "truncate",
                     },
@@ -26,6 +31,7 @@ return {
             vim.keymap.set('n', '<leader>fb', '<cmd> Telescope buffers<cr>')
             vim.keymap.set('n', '<leader>fh', '<cmd> Telescope git_status<cr>')
             vim.keymap.set('n', '<leader>fv', '<cmd> Telescope git_branches<cr>')
+            vim.keymap.set('n', '<leader>fm', '<cmd> Telescope noice theme=dropdown<cr>')
         end
     },
 

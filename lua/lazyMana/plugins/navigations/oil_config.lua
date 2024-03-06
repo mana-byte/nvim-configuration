@@ -27,7 +27,7 @@ return {
                 },
             })
             vim.keymap.set("n", "-", oil.open)
-            vim.keymap.set("n", "è", oil.toggle_float)
+            vim.keymap.set("n", "é", oil.toggle_float)
         end
     },
 

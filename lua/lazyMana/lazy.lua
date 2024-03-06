@@ -17,5 +17,6 @@ require("lazy").setup({
         {import = "lazyMana.plugins.esthetics"},
         {import = "lazyMana.plugins.navigations"},
         {import = "lazyMana.plugins.utils"},
+        {import = "lazyMana.plugins.help"}
     }
 })

@@ -18,4 +18,5 @@ vim.opt.relativenumber = true
 require("lazyMana.lazy")
 
 vim.keymap.set('n', '<c-l>', ':vsplit<CR>', { silent = true })
-vim.keymap.set('n', '<leader>lp', '<cmd> vsplit <bar> split ')
+vim.keymap.set('n', '<c-h>', ':split<CR>', { silent = true })
+vim.keymap.set('n', '<leader>lp', '<cmd> vsplit <bar> split <CR>')
