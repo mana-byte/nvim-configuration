@@ -13,7 +13,7 @@ vim.opt.shiftwidth = 4
 vim.opt.expandtab = true
 vim.opt.foldmethod = 'indent'
 vim.opt.foldlevel = 99
-vim.opt.relativenumber = true
+-- vim.opt.relativenumber = true
 
 require("lazyMana.lazy")
 
