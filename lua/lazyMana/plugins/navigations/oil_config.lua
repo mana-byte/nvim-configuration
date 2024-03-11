@@ -25,6 +25,9 @@ return {
                     ["<esc>"] = "actions.close",
                     ["<C-p>"] = "actions.preview",
                 },
+                view_options = {
+                    show_hidden = true,
+                }
             })
             vim.keymap.set("n", "-", oil.open)
             vim.keymap.set("n", "é", oil.toggle_float)
