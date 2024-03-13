@@ -6,51 +6,42 @@ It is not perfect but it is still a good config. Trust me.
 
 ### Here's a list of plugins included in my configuration:
 
-- **[auto-pairs](https://github.com/jiangmiao/auto-pairs):** Automatically inserts and completes pairs of brackets, quotes, and other characters.
-- **[barbar.nvim](https://github.com/romgrk/barbar.nvim):** Provides a buffer management interface with tabs for easy navigation.
-- **[cellular-automaton.nvim](https://github.com/elswork/cellular-automaton.nvim):** Adds cellular automata functionality to Neovim for fun and exploration.
-- **[cmp-buffer](https://github.com/hrsh7th/cmp-buffer):** Completion source for buffer names in Neovim.
-- **[cmp-cmdline](https://github.com/hrsh7th/cmp-cmdline):** Adds command line completion support to Neovim.
-- **[cmp-nvim-lsp](https://github.com/hrsh7th/cmp-nvim-lsp):** Completion source for Neovim built-in LSP.
-- **[cmp-nvim-ultisnips](https://github.com/hrsh7th/cmp-nvim-ultisnips):** Integration between nvim-cmp and UltiSnips for snippet completion.
-- **[cmp-path](https://github.com/hrsh7th/cmp-path):** Completion source for file paths in Neovim.
-- **[codewindow.nvim](https://github.com/ideyuta/codewindow.nvim):** Enhances the code editing experience with various features and optimizations.
-- **[Comment.nvim](https://github.com/numToStr/Comment.nvim):** Provides easy commenting/uncommenting functionality for code.
-- **[copilot.vim](https://github.com/williamboman/copilot.vim):** Adds GitHub Copilot integration to Neovim for AI-powered code suggestions.
-- **[dressing.nvim](https://github.com/monaqa/dressing.nvim):** Applies themes and styling to Neovim buffers and UI elements.
-- **[formatter.nvim](https://github.com/mhartington/formatter.nvim):** Allows for easy code formatting with various formatters.
-- **[fzf](https://github.com/junegunn/fzf):** Command-line fuzzy finder for fast and efficient file and text searching.
-- **[fzf.vim](https://github.com/junegunn/fzf.vim):** Provides integration between Neovim and fzf for seamless searching and navigation.
-- **[gitsigns.nvim](https://github.com/lewis6991/gitsigns.nvim):** Adds Git diff signs to the Neovim gutter for easy version control.
-- **[guihua.lua](https://github.com/ray-x/guihua.lua):** GUI framework for Lua-based UI elements in Neovim.
-- **[kanagawa.nvim](https://github.com/Project-son/kanagawa.nvim):** Adds Kanagawa-inspired themes and colorschemes to Neovim.
-- **[lazy.nvim](https://github.com/tjdevries/lazy.nvim):** Lazy loading plugin manager for Neovim for faster startup times.
-- **[leap.nvim](https://github.com/winston0410/leap.nvim):** Provides easy navigation and movement shortcuts in Neovim.
-- **[lualine.nvim](https://github.com/hoob3rt/lualine.nvim):** Configurable statusline for Neovim with support for customization.
-- **[mason-lspconfig.nvim](https://github.com/windwp/nvim-lspconfig):** Configuration framework for setting up LSP servers in Neovim.
-- **[mason.nvim](https://github.com/TimUntersberger/neovim):** Mason is a powerful and extensible framework for configuring Neovim.
-- **[navigator.lua](https://github.com/ray-x/navigator.lua):** Adds file navigation and management features to Neovim.
-- **[noice.nvim](https://github.com/munetoshi/nvim-noice):** Integrates the Noice extension for Telescope for advanced searching capabilities.
-- **[nui.nvim](https://github.com/AckslD/nui.nvim):** Provides a Lua-based UI framework for creating custom UI elements in Neovim.
-- **[nvim-cmp](https://github.com/hrsh7th/nvim-cmp):** Fast and efficient completion framework for Neovim.
-- **[nvim-lspconfig](https://github.com/neovim/nvim-lspconfig):** Configuration for Neovim's built-in LSP.
-- **[nvim-notify](https://github.com/rcarriga/nvim-notify):** Notification framework for Neovim for displaying messages and alerts.
-- **[nvim-tree.lua](https://github.com/kyazdani42/nvim-tree.lua):** File explorer plugin for Neovim with Lua-based configuration.
-- **[nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter):** Treesitter integration for Neovim for syntax highlighting and code analysis.
-- **[nvim-web-devicons](https://github.com/kyazdani42/nvim-web-devicons):** Provides file icon support for Neovim with web font icons.
-- **[nvim-window](https://github.com/ojroques/nvim-window):** Adds window management features to Neovim for organizing and manipulating windows.
-- **[oil.nvim](https://github.com/ray-x/oil.nvim):** Provides oil language support for Neovim with syntax highlighting and indentation.
-- **[plenary.nvim](https://github.com/nvim-lua/plenary.nvim):** Utility functions and libraries for Neovim plugin development.
-- **[startup.nvim](https://github.com/tjdevries/startup.nvim):** Startup profiling plugin for Neovim to measure plugin load times.
-- **[telescope.nvim](https://github.com/nvim-telescope/telescope.nvim):** Modern and highly extensible fuzzy finder for Neovim.
-- **[todo-comments.nvim](https://github.com/folke/todo-comments.nvim):** Highlights TODO, FIXME, and other comment annotations in Neovim.
-- **[toggleterm.nvim](https://github.com/akinsho/nvim-toggleterm.lua):** Adds terminal toggling functionality to Neovim for easy access to terminal windows.
-- **[tokyonight.nvim](https://github.com/folke/tokyonight.nvim):** Beautiful and minimalistic colorscheme for Neovim inspired by the Tokyo skyline.
-- **[trouble.nvim](https://github.com/folke/trouble.nvim):** Adds a diagnostics dashboard to Neovim for managing and viewing code issues.
-- **[ultisnips](https://github.com/SirVer/ultisnips):** Snippet engine for Neovim for easy insertion of code snippets.
-- **[undotree](https://github.com/mbbill/undotree):** Visualizes the undo history in Neovim for easy navigation and management.
-- **[vim-devicons](https://github.com/ryanoasis/vim-devicons):** Adds file icon support to Neovim using native Vimscript.
-- **[vim-fugitive](https://github.com/tpope/vim-fugitive):** Provides Git integration and commands within Neovim.
-- **[vim-repeat](https://github.com/tpope/vim-repeat):** Allows for repeating actions in Neovim with the . command.
-- **[vim-snippets](https://github.com/honza/vim-snippets):** Collection of snippets for various programming languages in Neovim.
-- **[Vundle.vim](https://github.com/VundleVim/Vundle.vim):** Plugin manager for Neovim with support for easy plugin installation and management.
+1. **auto-pairs**: A plugin for automatically inserting or deleting matching pairs of characters.
+2. **cmp-buffer**: A completion source for nvim-cmp providing buffer completion.
+3. **cmp-cmdline**: A completion source for nvim-cmp providing command line completion.
+4. **cmp-nvim-lsp**: A completion source for nvim-cmp providing LSP completion.
+5. **cmp-path**: A completion source for nvim-cmp providing path completion.
+6. **cmp_luasnip**: A completion source for nvim-cmp providing LuaSnip completion.
+7. **Comment.nvim**: A plugin for commenting out code with ease.
+8. **copilot.vim**: A plugin for code generation and snippets.
+9. **formatter.nvim**: A plugin for code formatting.
+10. **fzf**: A fuzzy file finder.
+11. **fzf.vim**: FZF integration for Vim.
+12. **gitsigns.nvim**: Git signs in the gutter to indicate added, modified, or removed lines.
+13. **guihua.lua**: A Lua-powered startup profiler for Neovim.
+14. **lazy.nvim**: A lazy loading utility for Neovim.
+15. **leap.nvim**: A quick cursor motion plugin.
+16. **lualine.nvim**: A light and configurable statusline and tabline plugin.
+17. **LuaSnip**: A snippet engine for Neovim.
+18. **mason-lspconfig.nvim**: Mason LSP configuration for Neovim.
+19. **mason.nvim**: A plugin providing Mason core functionality.
+20. **navigator.lua**: A Neovim plugin to navigate between files.
+21. **noice.nvim**: A plugin providing enhanced file navigation using Telescope.
+22. **nui.nvim**: A minimalist Neovim UI plugin.
+23. **nvim**: The core Neovim runtime files.
+24. **nvim-cmp**: A completion plugin for Neovim.
+25. **nvim-lspconfig**: A plugin for configuring Neovim's built-in LSP client.
+26. **nvim-notify**: A notification system for Neovim.
+27. **nvim-treesitter**: A plugin for improved syntax highlighting and code manipulation.
+28. **nvim-web-devicons**: Provides file and folder icons for Neovim plugins.
+29. **nvim-window**: A plugin for managing Neovim windows.
+30. **oil.nvim**: A utility library for Lua development in Neovim.
+31. **plenary.nvim**: A utility library for Lua development in Neovim.
+32. **startup.nvim**: A Lua-based startup profiler for Neovim.
+33. **telescope.nvim**: A highly extendable fuzzy finder over lists.
+34. **todo-comments.nvim**: A plugin for highlighting TODO comments.
+35. **toggleterm.nvim**: A plugin for toggling terminal windows in Neovim.
+36. **undotree**: A plugin for visualizing the undo tree.
+37. **vim-fugitive**: A Git wrapper for Vim.
+38. **vim-repeat**: A plugin to repeat plugin maps.
+39. **which-key.nvim**: A Vim plugin that shows keybindings in popup.

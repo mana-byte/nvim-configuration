@@ -6,6 +6,7 @@ return {
         end
     },
     {
+        -- ERROR: sometimes the telescope window when opening crashes and i forces the user to close nvim.
         'nvim-telescope/telescope.nvim',
         dependencies = {
             'nvim-lua/plenary.nvim',
