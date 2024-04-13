@@ -15,8 +15,12 @@ return {
 
             local capabilities = require('cmp_nvim_lsp').default_capabilities()
             local lspconfig = require('lspconfig')
+            -- WARNING: SET UP LANGUAGE SERVER HERE
 
             lspconfig.lua_ls.setup({
+                capabilities = capabilities,
+            })
+            lspconfig.clangd.setup({
                 capabilities = capabilities,
             })
             lspconfig.jdtls.setup({
@@ -26,6 +30,9 @@ return {
                 capabilities = capabilities,
             })
             lspconfig.vimls.setup({
+                capabilities = capabilities,
+            })
+            lspconfig.arduino_language_server.setup({
                 capabilities = capabilities,
             })
 

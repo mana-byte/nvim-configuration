@@ -1,6 +1,7 @@
 if vim.loader then
     vim.loader.enable()
 end
+
 vim.g.mapleader = ','
 vim.opt.number = true
 vim.opt.autoindent = true
