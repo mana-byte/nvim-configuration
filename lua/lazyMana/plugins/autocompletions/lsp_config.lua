@@ -10,7 +10,7 @@ return {
         config = function()
             local mason_lsp_config = require('mason-lspconfig')
             mason_lsp_config.setup({
-                ensure_installed = {"jdtls", "pylsp", "lua_ls", "vimls"},
+                ensure_installed = { "jdtls", "pylsp", "lua_ls", "vimls" },
             })
 
             local capabilities = require('cmp_nvim_lsp').default_capabilities()
@@ -32,10 +32,9 @@ return {
             lspconfig.vimls.setup({
                 capabilities = capabilities,
             })
-            lspconfig.arduino_language_server.setup({
+            lspconfig.tsserver.setup({
                 capabilities = capabilities,
             })
-
         end
     },
     {

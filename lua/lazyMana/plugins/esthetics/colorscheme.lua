@@ -58,7 +58,7 @@ return {
                     section_separators = { left = '', right = '' },
                 },
                 sections = {
-                    lualine_a = { 'buffers' },
+                    lualine_a = { 'location' },
                     lualine_b = { 'diagnostics', 'branch' , 'diff'},
                     lualine_c = { 'filesize' },
                     lualine_x = {},
