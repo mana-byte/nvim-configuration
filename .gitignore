@@ -1,3 +1,7 @@
 lazy-lock.json
 token.txt
 .swp
+sshkey
+sshkey.pub
+package-lock.json
+package.json
