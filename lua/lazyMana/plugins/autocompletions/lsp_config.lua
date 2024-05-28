@@ -10,7 +10,7 @@ return {
         config = function()
             local mason_lsp_config = require('mason-lspconfig')
             mason_lsp_config.setup({
-                ensure_installed = { "jdtls", "pylsp", "lua_ls", "vimls", "clangd" },
+                ensure_installed = { "jdtls", "pylsp", "lua_ls", "vimls", "clangd", "tsserver", 'arduino_language_server', 'html', 'biome', 'intelephense', 'matlab_ls' },
             })
 
             local capabilities = require('cmp_nvim_lsp').default_capabilities()
@@ -38,9 +38,6 @@ return {
             lspconfig.arduino_language_server.setup({
                 capabilities = capabilities,
             })
-            lspconfig.clangd.setup({
-                capabilities = capabilities,
-            })
             lspconfig.html.setup({
                 capabilities = capabilities,
             })
@@ -56,6 +53,11 @@ return {
             lspconfig.matlab_ls.setup({
                 capabilities = capabilities,
                 single_file_support = true,
+                settings = {
+                    matlab = {
+                        matlabPath = "/usr/local/bin/matlab",
+                    }
+                },
             })
         end
     },
