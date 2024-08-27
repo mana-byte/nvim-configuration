@@ -9,7 +9,8 @@ return {
                 "c",
             })
             time_to_sleep.setup({
-                lualine_tts_toggle = true,
+                tts_toggle = false,
+                lualine_tts_toggle = false,
                 custom_journal_tabs = {
                     'alphabet'
                 },

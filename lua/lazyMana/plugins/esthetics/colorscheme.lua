@@ -56,14 +56,15 @@ return {
                     theme = 'catppuccin',
                     component_separators = { left = '', right = '' },
                     section_separators = { left = '', right = '' },
+                    globalstatus = true,
                 },
                 sections = {
                     lualine_a = { 'location' },
-                    lualine_b = { 'diagnostics', 'branch' , 'diff'},
-                    lualine_c = { 'filesize' },
+                    lualine_b = { 'buffers', 'diff' },
+                    lualine_c = { 'branch', 'filesize' },
                     lualine_x = {},
-                    lualine_y = { 'progress', 'os.date("%a at %X")', },
-                    lualine_z = { name, 'mode' }
+                    lualine_y = { name, 'os.date("%a at %X")', },
+                    lualine_z = { 'mode' }
                 },
             })
         end

@@ -10,7 +10,7 @@ return {
         config = function()
             local mason_lsp_config = require('mason-lspconfig')
             mason_lsp_config.setup({
-                ensure_installed = { "jdtls", "pylsp", "lua_ls", "vimls", "clangd", "tsserver", 'arduino_language_server', 'html', 'biome', 'intelephense' },
+                ensure_installed = { "ruby_lsp", "jdtls", "pylsp", "lua_ls", "vimls", "clangd", "tsserver", 'arduino_language_server', 'html', 'biome', 'intelephense' },
             })
 
             local capabilities = require('cmp_nvim_lsp').default_capabilities()
@@ -49,6 +49,10 @@ return {
             lspconfig.intelephense.setup({
                 capabilities = capabilities,
                 -- root_dir = lspconfig.util.root_pattern("composer.json", ".git"),
+            })
+            lspconfig.ruby_lsp.setup({
+                capabilities = capabilities,
+                single_file_support = true,
             })
         end
     },
