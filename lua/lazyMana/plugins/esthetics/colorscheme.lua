@@ -60,8 +60,8 @@ return {
                 },
                 sections = {
                     lualine_a = { 'location' },
-                    lualine_b = { 'buffers', 'diff' },
-                    lualine_c = { 'branch', 'filesize' },
+                    lualine_b = { 'buffers' },
+                    lualine_c = { 'diff', 'branch', 'filesize' },
                     lualine_x = {},
                     lualine_y = { name, 'os.date("%a at %X")', },
                     lualine_z = { 'mode' }
