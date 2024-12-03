@@ -27,12 +27,11 @@ return {
                     ["tg"] = "actions.toggle_hidden",
                 },
                 view_options = {
-                    show_hidden = false,
+                    show_hidden = true,
                 }
             })
-            vim.keymap.set("n", "-", oil.open)
-            vim.keymap.set("n", "é", oil.toggle_float)
+            vim.keymap.set("n", "é", oil.open)
+            vim.keymap.set("n", "-", oil.toggle_float)
         end
     },
-
 }
