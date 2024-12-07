@@ -19,6 +19,7 @@ return {
             float_opts = {
                 border = "curved",
                 winblend = 0,
+                title_pos = 'right',
                 highlights = {
                     border = "Normal",
                     background = "Normal",

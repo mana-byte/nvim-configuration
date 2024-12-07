@@ -23,3 +23,12 @@ require("lazyMana.lazy")
 vim.keymap.set('n', '<c-l>', ':vsplit<CR>', { silent = true })
 vim.keymap.set('n', '<c-h>', ':split<CR>', { silent = true })
 vim.keymap.set('n', '<leader>lp', '<cmd> vsplit <bar> split <CR>')
+local toggleCopilotChat = function()
+    require('CopilotChat').toggle({
+        window = {
+            layout = 'float',
+            title = 'My Chat',
+        }
+    })
+end
+vim.keymap.set('n', '<leader>cc', toggleCopilotChat)
